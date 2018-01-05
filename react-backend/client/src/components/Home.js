@@ -1,76 +1,16 @@
 import React, { Component } from "react";
-import Gallery from "react-photo-gallery";
 
-const photos = [
-  {
-    src: "https://source.unsplash.com/2ShvY8Lf6l0/800x599",
-    width: 4,
-    height: 3
-  },
-  {
-    src: "https://source.unsplash.com/Dm-qxdynoEc/800x799",
-    width: 1,
-    height: 1
-  },
-  {
-    src: "https://source.unsplash.com/qDkso9nvCg0/600x799",
-    width: 3,
-    height: 4
-  },
-  {
-    src: "https://source.unsplash.com/iecJiKe_RNg/600x799",
-    width: 3,
-    height: 4
-  },
-  {
-    src: "https://source.unsplash.com/epcsn8Ed8kY/600x799",
-    width: 3,
-    height: 4
-  },
-  {
-    src: "https://source.unsplash.com/NQSWvyVRIJk/800x599",
-    width: 4,
-    height: 3
-  },
-  {
-    src: "https://source.unsplash.com/zh7GEuORbUw/600x799",
-    width: 3,
-    height: 4
-  },
-  {
-    src: "https://source.unsplash.com/PpOHJezOalU/800x599",
-    width: 4,
-    height: 3
-  },
-  {
-    src: "https://source.unsplash.com/I1ASdgphUH4/800x599",
-    width: 4,
-    height: 3
-  }
-];
-
+var textStyle = {
+  textAlign: 'center'
+}
 class Home extends Component {
-  constructor() {
-    super();
-    this.state = {
-      images: []
-    };
-  }
-
-  // .then(images => this.setState({ images }));
-  // .then(images => this.setState({ images }));
-  componentDidMount() {
-    fetch("/images")
-      .then(res => res.json())
-      .then(images => this.setState({ images }));
-  }
-
   render() {
     return (
       <div>
-        <h1>Images</h1>
-        <Gallery photos={this.state.images} />
-        {console.log('this.state', this.state)}
+        <h1 style={textStyle}>What up.</h1>
+        <h2 style={textStyle}>In this React app I am pulling images from an express api</h2>
+        <h3 style={textStyle}>Check it out</h3>
+        <h4 style={textStyle}>Use the links on the navbar</h4>
       </div>
     );
   }

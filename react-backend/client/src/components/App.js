@@ -5,6 +5,7 @@ import '../styles/App.css';
 import Home from './Home';
 import Animals from './Animals';
 import Tech from './Tech';
+import Woods from './Woods';
 
 class App extends Component {
   
@@ -14,6 +15,7 @@ class App extends Component {
        <div className='App'>
          <Navbar />
          <Route exact path='/' component={Home} />
+         <Route exact path='/woods' component={Woods} />
          <Route exact path='/animals' component={Animals} />
          <Route exact path='/tech' component={Tech} />
        </div>

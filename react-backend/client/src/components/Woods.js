@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import Gallery from "react-photo-gallery";
-class Tech extends Component {
+
+class Woods extends Component {
   constructor() {
     super();
     this.state = {
@@ -11,7 +12,7 @@ class Tech extends Component {
   // .then(images => this.setState({ images }));
   // .then(images => this.setState({ images }));
   componentDidMount() {
-    fetch("/images/tech")
+    fetch("/images")
       .then(res => res.json())
       .then(images => this.setState({ images }));
   }
@@ -19,10 +20,10 @@ class Tech extends Component {
   render() {
     return (
       <div>
-        <h1>Tech Images</h1>
+        <h1>Woods Images</h1>
         <Gallery photos={this.state.images} />
       </div>
     );
   }
 }
-export default Tech;
+export default Woods;

@@ -21,7 +21,6 @@ class Animals extends Component {
       <div>
         <h1>Animal Images</h1>
         <Gallery photos={this.state.images} />
-        {console.log('this.state', this.state)}
       </div>
     );
   }

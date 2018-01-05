@@ -6,11 +6,11 @@ class Navbar extends Component {
     return (
       <header>
         <h2>
-          <a href="/">7factor Stuff</a>
+          <Link to='/'>7Factor</Link>
         </h2>
         <nav>
           <li>
-            <Link to='/'>Random</Link>
+            <Link to='/woods'>Woods</Link>
           </li>
           <li>
             <Link to='/animals'>Animals</Link>
