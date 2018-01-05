@@ -20,6 +20,10 @@ header {
   opacity: 0;
 }
 
+h1 {
+  text-align: center;
+}
+
 @keyframes fadein {
   100% {
     opacity: 1;
